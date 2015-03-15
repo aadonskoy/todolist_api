@@ -9,12 +9,12 @@ default: &default
   encoding: unicode
   pool: 5
   timeout: 5000
-  user: todolist_api
-  password: secure_pass
 
 development:
   <<: *default
   database: todoapi_dev
+  user: todolist_api
+  password: secure_pass
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -22,7 +22,8 @@ development:
 test:
   <<: *default
   database: todoapi_test
+  user: todolist_api
+  password: secure_pass
 
 production:
   <<: *default
-  database: todoapi
