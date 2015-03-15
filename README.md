@@ -3,7 +3,7 @@
 For install it and run server just type in your terminal:
 
     bundle install
-    rake db:create dB:migrate
+    rake db:create db:migrate
     rails server
 
 ## For testing
