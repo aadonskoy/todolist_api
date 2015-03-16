@@ -6,6 +6,7 @@ gem 'pg'
 gem 'devise'
 gem 'jwt'
 gem 'rabl'
+gem 'rack-cors', require: 'rack/cors'
 
 group :development do
   gem 'spring'
