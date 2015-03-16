@@ -26,21 +26,21 @@ This will create and give you new api_key.
 
 * Log out:
 
-      curl -H "Content-Type: application/json" https://still-journey-1279.herokuapp.com/api/v1/sessions/log_out?api_key=<given_api_key>
+      curl -H "Content-Type: application/json" https://still-journey-1279.herokuapp.com/api/v1/sessions/log_out?api_key=_given_api_key_
 This will erase api key.
 
 * Tasks for logged in user:
 
-      curl -H "Content-Type: application/json" https://still-journey-1279.herokuapp.com/api/v1/tasks?api_key=<given_api_key>
+      curl -H "Content-Type: application/json" https://still-journey-1279.herokuapp.com/api/v1/tasks?api_key=_given_api_key_
 
 * Create new task:
 
-      curl -H "Content-Type: application/json" -d '{"time": "2014-01-10", "description": "new task", "status": "not started"}' https://still-journey-1279.herokuapp.com/api/v1/tasks?api_key=<given_api_key>
+      curl -H "Content-Type: application/json" -d '{"time": "2014-01-10", "description": "new task", "status": "not started"}' https://still-journey-1279.herokuapp.com/api/v1/tasks?api_key=_given_api_key_
 
 * Update existing task:
 
-      curl -H "Content-Type: application/json" -X PUT -d '{"status": "started"}' https://still-journey-1279.herokuapp.com/api/v1/tasks/6?api_key=<given_api_key>
+      curl -H "Content-Type: application/json" -X PUT -d '{"status": "started"}' https://still-journey-1279.herokuapp.com/api/v1/tasks/6?api_key=_given_api_key_
 
 * Delete existing task:
 
-      curl -H "Content-Type: application/json" -X DELETE https://still-journey-1279.herokuapp.com/api/v1/tasks/6?api_key=<given_api_key>
+      curl -H "Content-Type: application/json" -X DELETE https://still-journey-1279.herokuapp.com/api/v1/tasks/6?api_key=_given_api_key_
